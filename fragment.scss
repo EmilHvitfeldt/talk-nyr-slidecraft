@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+
+$theme-orange: #FFB81A;
+$theme-yellow: #FFD571;
+$theme-brown: #E2AE86;
+$theme-pink: #FED7E1;
+
+$presentation-font-size-root: 100px;
+
+/*-- scss:rules --*/
+
+// fragment highlight colors --------------------------------------------------
+.reveal .slides section {
+  .fragment.highlight-orange,
+  .fragment.highlight-yellow,
+  .fragment.highlight-pink,
+  .fragment.highlight-brown {
+    opacity: 1;
+    visibility: inherit
+  }
+
+  .fragment.highlight-brown.visible {
+    background-color: $theme-brown;
+  }
+  .fragment.highlight-orange.visible {
+    background-color: $theme-orange;
+  }
+  .fragment.highlight-yellow.visible {
+    background-color: $theme-yellow;
+  }
+  .fragment.highlight-pink.visible {
+    background-color: $theme-pink;
+  }
+}

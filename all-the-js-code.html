@@ -1,0 +1,96 @@
+<script type="text/javascript">
+Reveal.on( 'fragmentshown', event => {
+  if (event.fragment.classList.contains("advance-slide")) {
+    Reveal
+      .getCurrentSlide()
+      .querySelector("iframe")
+      .contentWindow
+      .Reveal
+      .right()
+  }
+
+  // revealjs basics
+  if (event.fragment.classList.contains("basics1")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 6 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("basics2")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 13 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("basics3")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 21 * 30.36, behavior: 'smooth' })
+  }
+
+  // revealjs tricks
+  if (event.fragment.classList.contains("tricks1")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 5 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks2")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 21.5 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks3")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 30 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks4")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 30 * 30.36, behavior: 'smooth' })
+  }
+} );
+Reveal.on( 'fragmenthidden', event => {
+  if (event.fragment.classList.contains("advance-slide")) {
+    Reveal
+      .getCurrentSlide()
+      .querySelector("iframe")
+      .contentWindow
+      .Reveal
+      .left()
+  }
+
+  // revealjs basics
+  if (event.fragment.classList.contains("basics1")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 0 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("basics2")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 6 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("basics3")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 13 * 30.36, behavior: 'smooth' })
+  }
+
+  // revealjs tricks
+  if (event.fragment.classList.contains("tricks1")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 0 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks2")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 5 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks3")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 21.5 * 30.36, behavior: 'smooth' })
+  }
+
+  if (event.fragment.classList.contains("tricks4")) {
+    Reveal.getCurrentSlide().querySelector("code")
+    .scrollTo({ top: 30 * 30.36, behavior: 'smooth' })
+  }
+} );
+</script>

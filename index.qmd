@@ -1,0 +1,608 @@
+---
+format:
+  revealjs: 
+    theme: [default, styles.scss]
+    menu: false
+    code-line-numbers: false
+    code-copy: false
+    include-after-body: 
+      - "all-the-js-code.html"
+knitr:
+  opts_chunk: 
+    echo: true
+---
+
+## {background-image="images/pixel-heart.webp" .scrollable}
+
+<br><br><br>
+
+[
+[s]{.rainbow-red}
+[l]{.rainbow-orange}
+[i]{.rainbow-yellow}
+[d]{.rainbow-green}
+[e]{.rainbow-blue}
+[c]{.rainbow-indigo}
+[r]{.rainbow-purple}
+[a]{.rainbow-red}
+[f]{.rainbow-orange}
+[t]{.rainbow-yellow}
+]{.r-fit-text .comic-sans}
+
+[the art of creating __pretty__ presentations]{.r-fit-text .comic-sans}
+
+::: {.fragment}
+![](images/reduce-bounce-rate-loading-gif.gif){.absolute bottom="0" left="0" width="100%" height="100%" style="opacity: 0.85; max-width: 100%;"}
+:::
+
+## {background-image="images/elena-mozhvilo-title.jpg"}
+
+::: columns
+::: {.column width="50%"}
+[slidecraft]{.r-fit-text .theme-title}
+
+<br>
+
+the art of 
+
+creating 
+
+pretty 
+
+presentations
+
+:::
+:::
+
+## {.center}
+
+::: columns
+::: {.column width="50%"}
+[What is [Quarto]{.blue}]{.r-fit-text} 
+:::
+
+::: {.column .fragment width="50%"}
+[Quarto]{.blue} is an
+
+open-source
+
+scientific and technical
+
+publishing system
+
+built on Pandoc.
+:::
+:::
+
+## [Quarto]{.blue} vs [R Markdown]{.teal} {.center}
+
+<br>
+
+At its core, [Quarto]{.blue} is multilingual and independent of computational systems
+
+<br>
+
+Has expanded upon [R Markdown]{.teal} to add new languages and can add more in the future
+
+<br>
+
+Let’s bring [R Markdown]{.teal} to everybody!
+
+## {background-image="images/quarto-python.png"}
+
+## {background-image="images/quarto-r.png"}
+
+## {background-image="images/quarto-julia.png"}
+
+## {background-image="images/quarto-observable.png"}
+
+## {background-image="images/revealjs.png"}
+
+## [Quarto]{.blue} Revealjs Basics
+
+::: columns
+::: {.column width="50%"}
+
+::: {.quarto}
+`````md
+---
+title: "Basic Revealjs"
+format: revealjs
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{{r}}
+1 + 1
+```
+`````
+:::
+
+:::
+
+::: {.column width="50%"}
+<iframe class="slide-deck" src="_basics.html"></iframe>
+:::
+:::
+
+::: {.fragment .advance-slide .basics1}
+:::
+
+::: {.fragment .advance-slide .basics2}
+:::
+
+::: {.fragment .advance-slide .basics3}
+:::
+
+## [Quarto]{.blue} Revealjs tricks
+
+::: columns
+::: {.column width="50%"}
+
+::: {.quarto}
+`````md
+---
+title: "Tricky Revealjs"
+format: revealjs
+---
+
+## Columns
+
+::: columns
+::: {.column width="50%"}
+Columns
+
+Columns
+:::
+
+::: {.column width="50%"}
+Columns
+
+Columns
+:::
+:::
+
+## Absolute positioning
+
+![](images/oreo.png){.absolute top=200 left=0 width="350" height="300"}
+
+![](images/presto.png){.absolute top=50 right=50 width="250" height="450"}
+
+![](images/wiggles.png){.absolute bottom=0 right="30%" width="300" height="300"}
+
+## Centering {.center}
+
+Is normally super hard
+
+## {.center}
+
+[big text]{.r-fit-text}
+`````
+:::
+
+:::
+
+::: {.column width="50%"}
+<iframe class="slide-deck" src="_tricks.html"></iframe>
+:::
+:::
+
+::: {.fragment .advance-slide .tricks1}
+:::
+
+::: {.fragment .advance-slide .tricks2}
+:::
+
+::: {.fragment .advance-slide .tricks3}
+:::
+
+::: {.fragment .advance-slide .tricks4}
+:::
+
+## Colors and fonts
+
+::: {.fragment}
+![](images/pinterest.png){width="100%" fig-align="center"}
+:::
+
+## Color Constract Checker
+
+![](images/contrast.png){width="100%" fig-align="center"}
+
+::: footer
+<https://colourcontrast.cc/>
+:::
+
+## Google fonts
+
+![](images/google-fonts.png){width="100%" fig-align="center"}
+
+## Setting the theme - sass variables
+
+![](images/sass-variables.png){width="100%" fig-align="center"}
+
+::: footer
+<https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables>
+:::
+
+##
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: columns
+::: {.column width="50%"}
+
+`index.qmd`
+
+::: {.quarto}
+`````md
+---
+format: 
+  revealjs:
+    theme: style.scss
+---
+`````
+:::
+
+`style.scss`
+
+::: {.sass}
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
+[$font-family-sans-serif]{.brown}: "Crimson Text";  
+
+[$presentation-font-size-root]{.brown}: 46px;
+
+[$link-color]{.brown}: #440033;
+
+::: {.fragment .advance-slide}
+[$bg-color]{.brown}: #B7D9F6;
+:::
+
+/*-- scss:rules --*/
+:::
+
+:::
+
+::: {.column width="50%"}
+
+<iframe class="slide-deck" src="_sass.html"></iframe>
+
+:::
+:::
+
+## setting the palette
+
+::: columns
+::: {.column width="50%"}
+::: {.sass}
+[\$theme-purple]{.brown}: [#BF65C5]{style="background-color:#BF65C5; color:white;"};  
+[\$theme-blue]{.brown}: [#76AADB]{style="background-color:#76AADB; color:white;"};  
+[\$theme-teal]{.brown}: [#50847B]{style="background-color:#50847B; color:white;"};  
+[\$theme-cream]{.brown}: [#F5F5F5]{style="background-color:#F5F5F5;"};  
+[\$theme-dark-purple]{.brown}: [#1A1626]{style="background-color:#1A1626; color:white;"};  
+  
+[\$theme-yellow]{.brown}: [#FFD571]{style="background-color:#FFD571;"};  
+[\$theme-brown]{.brown}: [#a37100]{style="background-color:#a37100; color:white;"};  
+[\$theme-pink]{.brown}: [#FED7E1]{style="background-color:#FED7E1;"};  
+  
+[\$body-bg]{.brown}: [white]{style="background-color:white;"};  
+[\$body-color]{.brown}: [black]{style="background-color:black; color:white;"};  
+[\$link-color]{.brown}: $theme-purple;  
+[\$selection-bg]{.brown}:  $theme-pink;  
+
+.blue {  
+\ \ color: $theme-blue;  
+}  
+
+.teal {  
+\ \ color: $theme-teal;  
+}  
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+<iframe class="slide-deck" src="_palette.html"></iframe>
+:::
+:::
+:::
+
+## Creating slide classes
+
+::: {.sass}
+$theme-blue: #394D85;
+
+@mixin background-full {  
+\ \ background-size: cover;  
+\ \ background-position: center;  
+\ \ background-repeat: no-repeat;  
+}
+
+.theme-slide2 {  
+\ \ &:is(.slide-background) {  
+\ \ \ \ background-image: url('../../../../../assets/slide2.svg');  
+\ \ \ \ @include background-full;  
+\ \ }  
+\ \ h3 {  
+\ \ \ \ color: $theme-blue;  
+\ \ }  
+\ \ h2, h3, h4, h5, p, pre {  
+\ \ \ \ margin-left: 100px;  
+\ \ }  
+}
+:::
+
+## Creating slide classes
+
+::: {.quarto}
+`````md
+---
+format: 
+  revealjs:
+    theme: style.scss
+---
+
+## Amazing Title {.theme-title1 .center}
+
+## Welcome! {.theme-slide1}
+
+## Getting started {.theme-section2 .center}
+
+## Install R {.theme-slide3}
+
+## Try to install Python {.theme-slide3}
+`````
+:::
+
+##
+
+<iframe class="slide-deck" style="height:800px; max-width: 100%;" src="_earth/index.html"></iframe>
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: footer
+<https://github.com/EmilHvitfeldt/quarto-revealjs-earth>
+:::
+
+##
+
+<iframe class="slide-deck" style="height:800px; max-width: 100%; resize:both;" src="_letterbox/index.html"></iframe>
+
+::: footer
+<https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox>
+:::
+
+## Fragments
+
+::: columns
+::: {.column width="50%"}
+::: {.quarto}
+```md
+---
+format: revealjs
+---
+
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+```
+:::
+:::
+
+::: {.column width="50%"}
+<iframe class="slide-deck" src="_fragment.html"></iframe>
+:::
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: footer
+<https://quarto.org/docs/presentations/revealjs/advanced.html#fragments>
+:::
+
+## Custom fragments
+
+::: {.sass}
+.reveal .slides section .fragment.[highlight-orange]{.blue} {  
+\ \ [opacity: 1;]{.teal}  
+\ \ [visibility: inherit]{.teal}  
+}
+
+.reveal .slides section .fragment.[highlight-orange]{.blue}.visible {  
+\ \ [background-color: $theme-orange;]{.teal}  
+}
+:::
+
+<br>
+
+::: {.fragment}
+<iframe class="slide-deck" style="height:300px; max-width: 100%;" src="_fragment_custom.html"></iframe>
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+## Revealjs API
+
+```js
+// Relative navigation
+Reveal.left();
+Reveal.right();
+Reveal.up();
+Reveal.down();
+Reveal.prev();
+Reveal.next();
+
+// Returns an object with the scaled 
+// presentationWidth & presentationHeight
+Reveal.getComputedSlideSize();
+
+Reveal.getCurrentSlide();
+
+Reveal.getProgress();
+```
+
+::: footer
+<https://revealjs.com/api/>
+:::
+
+## Revealjs Events
+
+```js
+Reveal.on( 'slidechanged', event => {
+  // event.previousSlide, event.currentSlide
+} );
+
+Reveal.on( 'resize', event => {
+  // event.scale, event.oldScale, event.size
+} );
+```
+
+<br>
+
+```js
+Reveal.on( 'fragmentshown', event => {
+  // event.fragment = the fragment DOM element
+} );
+Reveal.on( 'fragmenthidden', event => {
+  // event.fragment = the fragment DOM element
+} );
+```
+
+::: footer
+<https://revealjs.com/api/>
+:::
+
+## fragments with javascript
+
+```js
+Reveal.on( 'fragmentshown', event => {  
+  if (event.fragment.classList.contains("advance-slide")) {  
+    Reveal  
+      .getCurrentSlide().querySelector("iframe")  
+      .contentWindow.Reveal.right()  
+  }  
+} );  
+
+Reveal.on( 'fragmenthidden', event => {  
+  if (event.fragment.classList.contains("advance-slide")) {  
+    Reveal  
+      .getCurrentSlide().querySelector("iframe")  
+      .contentWindow.Reveal.left()  
+  }  
+} );  
+```
+
+## fragments with javascript
+
+```md
+---
+format:
+  revealjs: 
+    include-after-body: 
+      - "custom-fragments.html"
+---
+
+<iframe class="slide-deck" src="_basics.html"></iframe>
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+
+::: {.fragment .advance-slide}
+:::
+```
+
+## {background-image="images/elena-mozhvilo-title.jpg"}
+
+::: columns
+::: {.column width="45%"}
+[Thank you]{.r-fit-text .theme-title}
+
+<br>
+
+I'm [EmilHvitfeldt]{.blue} online
+
+<br>
+
+[Slidecraft 101 blog series at emilhvitfeldt.com](https://www.emilhvitfeldt.com/blog.html#category=slidecraft%20101)
+
+:::
+:::

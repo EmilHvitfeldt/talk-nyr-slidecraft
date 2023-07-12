@@ -1,0 +1,109 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
+$font-family-sans-serif: "Crimson Text";
+$font-family-monospace: 'Source Code Pro', monospace;
+
+$theme-purple: #BF65C5;
+$theme-blue: #76AADB;
+$theme-teal: #50847B;
+$theme-cream: #F5F5F5;
+$theme-dark-purple: #1A1626;
+
+$theme-yellow: #FFD571;
+$theme-brown: #a37100;
+$theme-pink: #FED7E1;
+
+$body-bg: white;
+$body-color: black;
+$link-color: lighten($theme-dark-purple, 0.5);
+$selection-bg: $theme-blue;
+
+$presentation-font-size-root: 46px;
+
+/*-- scss:rules --*/
+
+code span.fu {
+  color: #a37100;
+}
+
+.reveal code {
+  color: #a37100;
+}
+
+.mono {
+  font-family: 'Source Code Pro', monospace;
+}
+
+// custom code highlighting ---------------------------------------------------
+
+// Title Theme ----------------------------------------------------------------
+
+.beastly span:nth-child(1) {
+  color: #ef5350;
+}
+
+.theme-title {
+  font-family: 'Sail';
+}
+
+.comic-sans {
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.rainbow-red {color: #FF0002;}
+.rainbow-orange {color: #FF7800;}
+.rainbow-yellow {color: #FFFD0A;}
+.rainbow-green {color: #10DD15;}
+.rainbow-blue {color: #3050FF;}
+.rainbow-indigo {color: #7B20A3;}
+.rainbow-purple {color: #D501FA;}
+
+.blue {
+  color: $theme-blue;
+}
+
+.teal {
+  color: $theme-teal;
+}
+
+.brown {
+  color: $theme-brown;
+}
+
+.slide-deck {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+  box-shadow: 0 15px 30px rgba($theme-dark-purple, 0.5);
+}
+
+.sourceCode.markdown {
+  color: blue;
+  background-color: $theme-cream !important;
+  box-shadow: 0 15px 30px rgba($theme-blue, 0.8);
+
+  span {
+    text-wrap: balance;
+    word-wrap: break-word;
+  }
+}
+
+.quarto {
+  box-shadow: 0 15px 30px rgba($theme-blue, 0.8);
+}
+
+.glowbloom {
+  font-family: "glowbloom";
+}
+
+.sass {
+  overflow-wrap: anywhere;
+  font-size: 0.45em;
+  font-family: monospace;
+  box-shadow: 0 15px 30px rgba($theme-purple, 0.8);
+}

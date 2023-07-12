@@ -1,0 +1,25 @@
+---
+title: "Style Slides"
+format: 
+  revealjs:
+    theme: [default, styles.scss]
+    progress: false
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. And [this is a link](example.com)
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Bullets  {background-transition="fade" background-color="#B7D9F6"}
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code

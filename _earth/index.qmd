@@ -1,0 +1,41 @@
+---
+format: earth-revealjs
+---
+
+## .theme-title1 {.theme-title1 .center}
+
+### quarto-revealjs-earth
+
+## .theme-title2 {.theme-title2 .center}
+
+### Another title theme
+
+## .theme-section1 {.theme-section1 .center}
+
+### Text and code example
+
+You are able to include text and code, and the width of each should fit
+
+```{r, echo=TRUE}
+lm(mpg~disp, data = mtcars)
+```
+
+## .theme-section2 {.theme-section2 .center}
+
+### Subtitle
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## .theme-section3 {.theme-section3 .center}
+
+### Another subtitle
+
+## .theme-slide1 {.theme-slide1}
+
+### Normal slide
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## .theme-slide2 {.theme-slide2}
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.

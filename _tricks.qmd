@@ -1,0 +1,36 @@
+---
+title: "Tricky Revealjs"
+format: revealjs
+---
+
+## Columns
+
+::: columns
+::: {.column width="50%"}
+Columns
+
+Columns
+:::
+
+::: {.column width="50%"}
+Columns
+
+Columns
+:::
+:::
+
+## Absolute positioning
+
+![](images/oreo.png){.absolute top=200 left=0 width="350" height="300"}
+
+![](images/presto.png){.absolute top=50 right=50 width="250" height="450"}
+
+![](images/wiggles.png){.absolute bottom=0 right="30%" width="300" height="300"}
+
+## Centering {.center}
+
+Is normally super hard
+
+## {.center}
+
+[big text]{.r-fit-text}

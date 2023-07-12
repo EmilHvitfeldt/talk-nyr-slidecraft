@@ -1,0 +1,22 @@
+---
+format: 
+  revealjs:
+    theme: [default, styles.scss]
+    progress: false
+---
+
+We now have that `[this]{.blue}` is rendered like [this]{.blue}
+
+And this block
+
+\::: {.teal}  
+-   Content authored with markdown  
+-   Output from executable code  
+:::
+
+Is colored like this
+
+::: {.teal}
+-   Content authored with markdown
+-   Output from executable code
+:::

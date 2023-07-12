@@ -1,0 +1,92 @@
+---
+title: "letterbox slides"
+subtitle: "quarto-revealjs-letterbox"
+format: letterbox-revealjs
+---
+
+## .image-right
+
+::: columns
+::: {.column width="45%"}
+We can use the `.image-right` and `.image-left` classes to insert images in the background
+
+These images will be placed behind most other content
+:::
+:::
+
+![](duck-on-duck.jpeg){.image-right}
+
+## .image-left {style="text-align: right;"}
+
+::: columns
+::: {.column width="55%"}
+:::
+::: {.column width="45%"}
+It is therefore recommened that you use [multiple columns](https://quarto.org/docs/presentations/index.html#multiple-columns) to only have text on the background area
+:::
+:::
+
+![](duck-on-duck.jpeg){.image-left}
+
+## {background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
+
+::: r-fit-text
+[background images]{style="color: hotpink;"}
+:::
+
+## Setting background colors {background-color="aquamarine"}
+
+you can set your background as you normally would
+
+## Video Slide Title {background-video="video.mp4" background-video-loop="true" background-video-muted="true"}
+
+This slides's background video will play in a loop with audio muted.
+
+## Slide Title {background-iframe="https://example.com"}
+
+## Further Modifying theme
+
+If you want to modify theme, you can specify the `.scss` my modifying the yaml to look like this
+
+``` yaml
+format: 
+  letterbox-revealjs:
+    theme: [default, style.scss]
+```
+
+## Modifying letterbox background
+
+The background colors can be with with, where `#444444` represents the new background color and `#222222` represents the color of the shadow
+
+``` css
+.quarto-light {
+  background-color: #444444;
+}
+
+.quarto-dark {
+  background-color: #444444;
+}
+
+.slides {
+  box-shadow: #222222 0px 0px 30px 0px;
+}
+```
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
