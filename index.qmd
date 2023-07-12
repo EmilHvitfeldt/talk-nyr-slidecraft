@@ -135,7 +135,7 @@ When you click the **Render** button a presentation will be generated that inclu
 :::
 
 ::: {.column width="50%"}
-<iframe class="slide-deck" src="_basics.html"></iframe>
+<iframe class="slide-deck" src="basics.html"></iframe>
 :::
 :::
 
@@ -197,7 +197,7 @@ Is normally super hard
 :::
 
 ::: {.column width="50%"}
-<iframe class="slide-deck" src="_tricks.html"></iframe>
+<iframe class="slide-deck" src="tricks.html"></iframe>
 :::
 :::
 
@@ -286,7 +286,7 @@ format:
 
 ::: {.column width="50%"}
 
-<iframe class="slide-deck" src="_sass.html"></iframe>
+<iframe class="slide-deck" src="sass.html"></iframe>
 
 :::
 :::
@@ -323,7 +323,7 @@ format:
 
 ::: {.column width="50%"}
 ::: {.fragment}
-<iframe class="slide-deck" src="_palette.html"></iframe>
+<iframe class="slide-deck" src="palette.html"></iframe>
 :::
 :::
 :::
@@ -377,7 +377,7 @@ format:
 
 ##
 
-<iframe class="slide-deck" style="height:800px; max-width: 100%;" src="_earth/index.html"></iframe>
+<iframe class="slide-deck" style="height:800px; max-width: 100%;" src="earth/index.html"></iframe>
 
 ::: {.fragment .advance-slide}
 :::
@@ -403,7 +403,7 @@ format:
 
 ##
 
-<iframe class="slide-deck" style="height:800px; max-width: 100%; resize:both;" src="_letterbox/index.html"></iframe>
+<iframe class="slide-deck" style="height:800px; max-width: 100%; resize:both;" src="letterbox/index.html"></iframe>
 
 ::: footer
 <https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox>
@@ -430,27 +430,13 @@ Fade out
 ::: {.fragment .highlight-red}
 Highlight red
 :::
-
-::: {.fragment .fade-in-then-out}
-Fade in, then out
-:::
-
-::: {.fragment .fade-up}
-Slide up while fading in
-:::
 ```
 :::
 :::
 
 ::: {.column width="50%"}
-<iframe class="slide-deck" src="_fragment.html"></iframe>
+<iframe class="slide-deck" src="fragment.html"></iframe>
 :::
-:::
-
-::: {.fragment .advance-slide}
-:::
-
-::: {.fragment .advance-slide}
 :::
 
 ::: {.fragment .advance-slide}
@@ -482,7 +468,7 @@ Slide up while fading in
 <br>
 
 ::: {.fragment}
-<iframe class="slide-deck" style="height:300px; max-width: 100%;" src="_fragment_custom.html"></iframe>
+<iframe class="slide-deck" style="height:300px; max-width: 100%;" src="fragment_custom.html"></iframe>
 :::
 
 ::: {.fragment .advance-slide}
@@ -578,7 +564,7 @@ format:
       - "custom-fragments.html"
 ---
 
-<iframe class="slide-deck" src="_basics.html"></iframe>
+<iframe class="slide-deck" src="basics.html"></iframe>
 
 ::: {.fragment .advance-slide}
 :::
