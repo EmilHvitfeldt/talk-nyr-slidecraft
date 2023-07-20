@@ -1,5 +1,5 @@
 ---
-title: "letterbox slides"
+title: "This window is resizeable by buttom right corner"
 subtitle: "quarto-revealjs-letterbox"
 format: letterbox-revealjs
 ---
